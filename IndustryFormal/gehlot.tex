@@ -1,0 +1,171 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+\geometry{left=1cm,right=11cm,marginparwidth=9cm,marginparsep=1cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% -------------------------------------------------
+%%      PERSONAL DETAILS
+%% -------------------------------------------------
+
+\begin{document}
+\name{Md Toufique Morshed Tamal}
+\tagline{Graduate Research Assistant}
+
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{morshed@cs.umanitoba.ca}
+  \phone{+14319987029}
+%  \mailaddress{Address, Street, 00000 County}
+%   \location{Winnipeg, Canada}
+%  \twitter{@zackbare1}
+  \linkedin{linkedin.com/in/md-toufique-morshed-tamal-1267b399/}
+   \github{github.com/toufique1370}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% -------------------------------------------------
+%%      Research INTERESTS
+%% -------------------------------------------------
+% \cvsection[sidebar]{Research Interests}
+% \cvtag{Data Privacy}
+% \cvtag{Machine Learning}
+% \cvtag{Deep Learning} \\
+% \cvtag{Natural Language Processing}
+% \cvtag{Artificial Intelligence}
+
+%\divider
+
+%% -------------------------------------------------
+%%      RESEARCH WORK
+%% -------------------------------------------------
+% \cvsection[sidebar]{Professional Experience}
+% \cvproject{De-identification of Electronic Health Record Using Neural Network}
+% \begin{itemize}
+% \item We proposed an architecture employing deep learning networks to detect sensitive information in medical textual data.  Our experimental results show the efficacy of our proposed architecture as we achieve better results compared to all previous attempts. This research work is currently under review for conference paper.
+% \end{itemize}
+% \smallskip
+% \cvproject{Detection of Heartbeat Rate and Oxygen Saturation in Blood in a Noninvasive Method}
+% \begin{itemize}
+% \item Submitted as \textit{Undergraduate Thesis Dissertation}. Using Beer Lambert law we were able to measure the ‘Heartbeat Rate’ and ‘Oxygen Saturation’ in blood from the fingertip of the patients.  
+% \end{itemize}
+
+% \smallskip
+\vspace{-5pt}
+\cvsection[sidebar]{Professional Experience}
+\vspace{-5pt}
+\cvevent{Graduate Research Assistant }{University of Manitoba}{Sep, 2017 -- Present}{Winnipeg, Canada}
+\begin{itemize}
+    \item Working in the Data Security and Privacy Laboratory as Research Assistant.
+    \item The research work involves High performance computing (HPC)-assisted (GPU, CPU) arithmetic computations and machine learning algorithm evolution over encrypted data.
+\end{itemize}
+
+\vspace{-10pt}
+\divider
+\vspace{-5pt}
+
+\cvevent{Senior Software Engineer}{Reve Systems Ltd.}{Apr, 2017 -- Aug, 2017}{Dhaka, Bangladesh}
+\begin{itemize}
+    \item Served as one of the Team Leads. Responsibilities involved REST API design and development, Code review (git), Conduct scrum meetings, and maintaining and tracking project development using JIRA. 
+    \item Training fresh graduates to cope up with the industrial environment was also a minor of the responsibilities.
+\end{itemize}
+
+\vspace{-10pt}
+\divider
+\vspace{-5pt}
+
+\cvevent{Software Engineer}{Monstar Lab Bangladesh Ltd.}{Mar, 2016 -- Mar, 2017}{Dhaka, Bangladesh}
+\begin{itemize}
+    \item Served as a key member of the iOS application development team. Worked in Swift 2.1.
+    \item Other responsibilities involved developing and bug fixing in Laravel (a PHP framework).
+\end{itemize}
+
+\vspace{-10pt}
+\divider
+\vspace{-5pt}
+
+\cvevent{Associate Software Engineer}{NewsCred Inc.}{ Sep, 2014 -- Mar, 2015}{Dhaka, Bangladesh} 
+\begin{itemize}
+    \item Mostly worked as a member of the web development team. Worked in Django (a Python framework, MySQL)
+    \item Also worked in other projects on MEAN (Mongo, Express, Angular, Node) stack.
+\end{itemize}
+
+\vspace{-10pt}
+\divider
+\vspace{-5pt}
+
+\cvevent{Junior Software Developer}{Code Testing Labs Ltd.}{Apr, 2012 -- Nov, 2013}{Dhaka, Bangladesh}
+\begin{itemize}
+    \item Served as a junior member of Kernel application development.
+\end{itemize}
+
+
+\cvsection{Education}
+\vspace{-5pt}
+\cvevent{M.Sc. (Thesis) in Computer Science }{University of Manitoba}{2017 -- 2019}{Winnipeg, Canada}
+{CGPA : 4.30/4.50}
+
+\vspace{-10pt}
+\divider
+\vspace{-5pt}
+
+\cvevent{B.Sc. in Computer Science and Engineering }{Bangladesh University of Engineering and Technology}{2009 -- 2014}{Dhaka, Bangladesh}
+{CGPA : 3.44/4.00}
+
+
+
+
+
+
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+% Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \wheelchart{1.5cm}{0.5cm}{%
+%   10/10em/accent!30/Sleeping \& dreaming about work,
+%   25/9em/accent!60/Public resolving issues with Yahoo!\ investors,
+%   5/13em/accent!10/\footnotesize\\[1ex]New York \& San Francisco Ballet Jawbone board member,
+%   20/15em/accent!40/Spending time with family,
+%   5/8em/accent!20/\footnotesize Business development for Yahoo!\ after the Verizon acquisition,
+%   30/9em/accent/Showing Yahoo!\ employees that their work has meaning,
+%   5/8em/accent!20/Baking cupcakes
+% }
+
+\clearpage
+\nocite{*}
+\end{document}

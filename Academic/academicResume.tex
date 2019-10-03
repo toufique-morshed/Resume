@@ -1,0 +1,333 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{ragged2e}
+\usepackage{array}
+\usepackage{tabularx}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{}{\Large Md Toufique Morshed Tamal}} & Email : \href{mailto:morshed@cs.umanitoba.ca}{morshed@cs.umanitoba.ca}  \\
+  \href{}{http://toufique-morshed.com} & Mobile : +1-431-998-7029 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\justify
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Manitoba (UofM)}
+            {Manitoba, Canada}
+            {Master of Science (Thesis) (Enrolled) in Computer Science;  GPA: 4.30/4.50}
+            {Sep. 2017 -- Dec. 2019 (Expected)}
+        \resumeSubheading
+            {Bangladesh University of Engineering and Technology (BUET)}
+            {Dhaka, Bangladesh}
+            {Bachelor of Science in Computer Science and Engineering;  GPA: 3.44/4.00} {Mar. 2009 -- July. 2014}
+    \resumeSubHeadingListEnd
+    
+\begin{comment}
+%-------------University of Manitoba------------
+\section{University of Maniotoba Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading 
+            {Teaching Assistant}
+            {}
+            {COMP 1010 Fall 2018}
+            {}
+        \resumeSubheading 
+            {Grader/Marker}
+            {}
+            {COMP 4140 Introduction to Cryptography and Cryptosystems  Fall 2017}
+            {}
+        \resumeSubheading 
+            {Grader/Marker}
+            {}
+            {COMP 4140 - COMP 7860 Security and Privacy Winter 2017}
+            {}
+    \resumeSubHeadingListEnd
+%-----------RESEARCH EXPERIENCE-----------------
+\end{comment}
+\section{Research Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Manitoba}
+            {Manitoba, Canada}
+            {Research Assistant}
+            {September 2017 - Present}
+            \resumeItemListStart
+                \resumeItem
+                    {Machine Learning Algorithms over Encrypted Data}
+                    {In my research, I developed secure and efficient frameworks that can train encrypted data via homomorphic computation. In these frameworks, homomorphic computation is performed in a parallel fashion by leveraging GPU.}
+                    % {In my research, I developed a framework to speed up the Homomorphic Computations exploiting different level of parallelism incorporating GPU to the computations more practical so that it can utilized in machine learning algorithms.}
+                    %{Computation over encrypted data has been a research problem since 1978. Since the breakthrough in 2009, there has been significant progress in the field of Homomorphic Encryption (HE) which allows computation homomorphically over the encrypted data to make it for practical use.In my research, I intend speed up the Homomorphic Computations exploiting different level of parallelism including GPU to make it a practical one so that it can utilized in machine learning algorithms.} 
+            \resumeItemListEnd
+        % \resumeSubheading
+        %     {Bangladesh University of Engineering and Technology}
+        %     {Dhaka, Bangladesh}
+        %     {Research Assistant}
+        %     {September 2016 - April 2017}
+        %     \resumeItemListStart
+        %         \resumeItem
+        %             {Regeneration of Images}
+        %             {During my tenure as Research Assistant under Dr. Abu Wasif I conducted literature reviews for synthetic image generation for using different techniques. Moreover, I implemented algorithms and summarize the results.}
+        %     \resumeItemListEnd
+        \resumeSubheading
+            {Bangladesh University of Engineering and Technology}
+            {Dhaka, Bangladesh}
+            {Undergraduate Thesis}
+            {}
+            \resumeItemListStart
+                \resumeItem
+                    {Antibacterial Drug Target Prediction}
+                    {In my undergraduate thesis, I extracted different chemical and physical properties of both target and non-target proteins as labelled data. Based on the data, we computed different machine learning models and analyzed them to classify the unknown protein.}
+                    %{For my undergraduate thesis, I worked under the supervision of Dr. Abu Wasif. In the undergraduate thesis, we extracted different chemical and physical properties of both target and non-target proteins as labelled data. Based on the data, we computed different machine learning models and analyzed them to classify the unknown protein.}
+            \resumeItemListEnd
+        \resumeSubHeadingListEnd
+
+%-----------Publications-----------------
+\section{Publications}
+    \resumeSubHeadingListStart
+        \item
+            \small{Morshed, Toufique, Dima Alhadidi, and Noman Mohammed. "Parallel Linear Regression on Encrypted Data." In 2018 16th Annual Conference on Privacy, Security and Trust (PST), pp. 1-5. IEEE, 2018.}
+        \item
+            \small{Ashraf, Mohammad Arif, Achia Khatun, Tanzila Sharmin, Faraid Mobin, Arifur Rahman Tanu, Toufique Morshed, Tawkir Ahmad Fakir, Rifat Ara Begum, and AHM Nurun Nabi. "MPDB 1.0: a medicinal plant database of Bangladesh." Bioinformation 10, no. 6 (2014): 384.}
+    \resumeSubHeadingListEnd
+    
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Languages}
+            {C, C++, Java, Swift, CUDA, Javascript, Python, R}
+            \hfill
+            \textbf{Frameworks}{: Spring Boot, Django, CodeIgniter}
+        \resumeSubItem
+            {Paradigm}
+            {Reactive Programming (RX), REST API, OpenMP, MPI}
+            \hfill
+            \textbf{Others}
+            {: TDD, Firebase, Agile, Playbook} 
+        \resumeSubItem
+            {Databases}
+            {MySql, Mongo}
+            \hfill
+            \textbf{Version Controller:}
+            {Git}
+    \resumeSubHeadingListEnd
+    
+%-----------PROFESSIONAL AFFILIATIONS & ACTIVITIES-----------------
+\section{Professional Affiliations \& Activities}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Reve Systems Ltd.}
+            {Dhaka, Bangladesh}
+            {Senior Software Engineer}
+            {April 2017 - August 2017}
+            \resumeItemListStart
+                \resumeItem
+                    {Job Responsibilities}
+                    {REST API design and development, Code review (git), Conduct scrum meetings, maintaining and tracking project development using JIRA, train fresh graduates to cope up with the industrial environment.}
+            \resumeItemListEnd
+        \resumeSubheading
+            {Monstar Lab Bangladesh}
+            {Dhaka, Bangladesh}
+            {Software Engineer}
+            {March 2016 - March 2017}
+            \resumeItemListStart
+                \resumeItem
+                    {Job Responsibilities}
+                    {iOS application development, code review.}
+            \resumeItemListEnd
+        \resumeSubheading
+            {University of Asia Pacific}
+            {Dhaka, Bangladesh}
+            {Lecturer}
+            { April 2015 - February 2016}
+            \resumeItemListStart
+                \resumeItem
+                    {Job Responsibilities}
+                    {Conducting courses material and classes, preparing questions and grading, providing talks regarding the software industries of Bangladesh, and conducting meeting for student welfare for both in academic and co-curricular activities.}% (Hardware and Software Club) and co-curricular activities (Cultural Club).}
+            \resumeItemListEnd
+        \resumeSubheading
+            {NewsCred Inc.}
+            {Dhaka, Bangladesh}
+            {Associate Software Engineer}
+            { Sep. 2014 - March 2015}
+            \resumeItemListStart
+                \resumeItem
+                    {Job Responsibilities}
+                    {Application feature development using Django framework, Code review, Bug fixing}
+            \resumeItemListEnd
+        \resumeSubheading
+              {Code Testing Labs Ltd.}
+              {Dhaka, Bangladesh}
+              {Junior Software Developer}
+              { April 2012 - Nov. 2013}
+              \resumeItemListStart
+                \resumeItem
+                    {Job Responsibilities}
+                    {Kernel application development, Bug fixing}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Kernel space RTP data encryption, decryption, padding, and ptime modification}
+            {A step to speed up the heavy weight encryption-decryption of RTP data by doing this in kernel space.}% While user space ptime modification slows up, kernel space modification can speed up the process.}
+        \resumeSubItem
+            {Digital Evidence Management System}
+            {A device wide application to collect and store the evidences of digital crimes for utilizing them in the court.}% This application also had a small web scrapper inside. This application was built for users in three different environment (Android, iOS, Desktop) and a admin panel.}
+        \resumeSubItem
+            {A2 Milk Bar}
+            {The food ordering services for \textit{A2 Milk Bar} (Australia) for iPhone users based customers’ location}% on One of the important feature of this application was to inform customers’ location to the store. The iOS mobile application was developed using Swift. The admin panel, we used Laravel framework and MySql for database.}
+        \resumeSubItem
+            {Content Management System (CMS)}
+            {This application was built to provide the desired contents to the client websites with minimal effort (both for the client and the application developer) keeping privacy measures intact so that the access level of all the users are kept intact.}% This was built using Django framework and MySql was used as database. For server request-response we used REST API.}
+        
+    \resumeSubHeadingListEnd
+    
+%--------ACADEMIC HONORS & AWARDS------------
+\section{Academic Honors \& Awards}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Inter University Development Contest, 2013}
+            {Second runner up for the development contest in \textit{php} track.}
+        \resumeSubItem
+            {Thesis Pre-defence Poster Presentation, 2013}
+            {$7^{th}$ in thesis pre-defence poster presentation among 60 teams.}
+        \resumeSubItem
+            {Undergraduate National Scholarship, 2008-2014}
+            {For outstanding performance in Higher Secondary exam.}
+        \resumeSubItem
+            {Secondary School National Scholarship, 2006-2008}
+            {For outstanding performance in Secondary School exam.}
+    \resumeSubHeadingListEnd
+    
+%--------Campus Activities------------
+
+\section{Campus Activities}
+    \resumeSubHeadingListStart
+        \resumeSubItem
+            {Department Councilor}
+            {For the Department of Computer Science at University of Manitoba since September 2018.}
+        \resumeSubItem
+            {Student Residence Manager}
+            {Dining manager for three times in a student residence named Ahsanullah hall.}
+        \resumeSubItem
+            {Blood Donor}
+            {Blood Donor achievements in voluntary institution \textit{Badhon} which is a voluntary organization}
+    \resumeSubHeadingListEnd
+
+\begin{comment}
+%--------LANGUAGES------------ 
+\section{Languages}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Bangla}{Native Language}
+        \resumeSubItem{English}{Fluent (speaking, reading, writing)}
+    \resumeSubHeadingListEnd
+
+%--------INTERESTS------------
+\section{Interests}
+    \small{Trekking, Sports, Violin. }
+\end{comment}
+    
+%--------REFERENCE------------
+\section{References}
+    % \small{Available upon request.}
+    % \begin{comment}
+        \begin{tabularx}{\textwidth}{XX}
+            \begin{tabular}[c]{@{}l@{}}
+                \textbf{Dr. Noman Mohammed}\\ 
+                \small{Assistant Professor}\\
+                \small{Department of Computer Science}\\
+                \small{University of Manitoba, Canada}\\ 
+                % \small{Manitoba, Canada}\\
+                \small{\href{mailto:noman@cs.umanitoba.ca}{noman@cs.umanitoba.ca}}
+            \end{tabular} 
+            & 
+            \begin{tabular}[c]{@{}l@{}}
+                \textbf{Dr. Parimala Thulasiraman}\\
+                \small{Professor}\\
+                \small{Department of Computer Science}\\
+                \small{University of Manitoba, Canada}\\
+                % \small{Manitoba, Canada}\\
+                \small{\href{mailto:thulasir@cs.umanitoba.ca}{thulasir@cs.umanitoba.ca}}
+            \end{tabular}
+        \end{tabularx}
+    % \end{comment}
+%-------------------------------------------
+\end{document}
